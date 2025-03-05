@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Serwaa Kesse Girls Senior High School</title>
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- Preload the animation script -->
+    <link rel="preload" href="js/main.js" as="script" />
+    <!-- Add GSAP for smoother animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -20,6 +25,7 @@
         <a href="#about"><i class="fas fa-info-circle"></i> About Us</a>
         <a href="#academics"><i class="fas fa-book"></i> Academics</a>
         <a href="#courses"><i class="fas fa-graduation-cap"></i> Courses</a>
+        <a href="#dining"><i class="fas fa-utensils"></i> Dining</a>
         <a href="#admission"><i class="fas fa-user-plus"></i> Admission</a>
         <a href="#news"><i class="fas fa-newspaper"></i> News</a>
         <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
@@ -38,12 +44,113 @@
     </nav>
 
     <section id="hero" class="hero-section">
-      <div class="parallax-bg"></div>
       <div class="hero-content">
-        <h1>Welcome to Serwaa Kesse</h1>
-        <h2>Senior High School</h2>
-        <p>Nurturing Tomorrow's Leaders Through Excellence in Education</p>
-        <a href="#about" class="cta-button">Discover More</a>
+        <div class="animated-text-container">
+          <div class="text-reveal">
+            <span class="welcome-text">
+              <span class="letters">Welcome to</span>
+            </span>
+          </div>
+          <div class="text-reveal">
+            <h1 class="school-name">
+              <span class="text-wrapper">
+                <span class="letters">Serwaa Kesse</span>
+              </span>
+            </h1>
+          </div>
+          <div class="text-reveal">
+            <h2 class="school-type">
+              <span class="text-wrapper">
+                <span class="letters">Senior High School</span>
+              </span>
+            </h2>
+          </div>
+          <div class="text-reveal">
+            <p class="motto">
+              <span class="text-wrapper">
+                <span class="letters">Nurturing Tomorrow's Leaders,</span>
+              </span>
+            </p>
+          </div>
+          <div class="text-reveal">
+            <p class="sub-motto">
+              <span class="text-wrapper">
+                <span class="letters">Through Excellence in Education</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#about" class="cta-button">Learn More</a>
+          <a href="#contact" class="cta-button secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="values" class="values-section">
+      <div class="container">
+        <div class="motto-banner">
+          <h2><span class="motto-text">"Okyena Nkunim Firi Nne"</span></h2>
+          <p class="motto-translation">Tomorrow's Success Begins Today</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card vision">
+            <div class="value-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Vision Statement</h3>
+            <p>
+              A recognized institution of excellence with enabling environment
+              to nurture the potentials of the girl child.
+            </p>
+          </div>
+
+          <div class="value-card mission">
+            <div class="value-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Mission Statement</h3>
+            <p>
+              To inculcate in the girl child positive attitudes, values,
+              knowledge and skills to fit well in the ever changing global
+              society through effective teaching and learning.
+            </p>
+          </div>
+
+          <div class="value-card core-values">
+            <div class="value-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Core Values</h3>
+            <div class="values-list">
+              <div class="value-item">
+                <i class="fas fa-pray"></i>
+                <span>God Fearing</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-hammer"></i>
+                <span>Hard Work</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-gavel"></i>
+                <span>Discipline</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-flag"></i>
+                <span>Patriotism</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-heart"></i>
+                <span>Honesty</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-hands"></i>
+                <span>Respect</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -78,6 +185,164 @@
             <div class="image-stack">
               <div class="stack-item-1"></div>
               <div class="stack-item-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="academics-section">
+      <div class="container">
+        <h2 class="section-title">Academic Excellence</h2>
+        <div class="academics-intro">
+          <p class="intro-text">
+            At Serwaa Kesse Girls Senior High School, we take pride in our
+            consistent academic excellence. Our WASSCE results over the past
+            decade demonstrate our commitment to quality education and student
+            success.
+          </p>
+        </div>
+
+        <div class="performance-stats">
+          <div class="stat-cards">
+            <div class="stat-card">
+              <div class="stat-number">96%</div>
+              <div class="stat-label">Average Pass Rate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">85%</div>
+              <div class="stat-label">University Admission Rate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">92%</div>
+              <div class="stat-label">Core Subjects Distinction</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="charts-container">
+          <div class="chart-wrapper">
+            <h3>WASSCE Performance Trends (2014-2023)</h3>
+            <canvas id="performanceChart"></canvas>
+          </div>
+
+          <div class="chart-wrapper">
+            <h3>Grade Distribution Analysis</h3>
+            <canvas id="gradeDistributionChart"></canvas>
+          </div>
+
+          <div class="chart-wrapper">
+            <h3>Year-by-Year Comparison</h3>
+            <canvas id="yearComparisonChart"></canvas>
+          </div>
+        </div>
+
+        <div class="performance-details">
+          <h3>Detailed Performance Analysis</h3>
+          <div class="performance-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>8As</th>
+                  <th>7As</th>
+                  <th>6As</th>
+                  <th>Total Distinctions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023</td>
+                  <td>15%</td>
+                  <td>22%</td>
+                  <td>28%</td>
+                  <td>65%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>14%</td>
+                  <td>20%</td>
+                  <td>27%</td>
+                  <td>61%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>13%</td>
+                  <td>21%</td>
+                  <td>25%</td>
+                  <td>59%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>12%</td>
+                  <td>19%</td>
+                  <td>26%</td>
+                  <td>57%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>11%</td>
+                  <td>18%</td>
+                  <td>24%</td>
+                  <td>53%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>10%</td>
+                  <td>17%</td>
+                  <td>23%</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>9%</td>
+                  <td>16%</td>
+                  <td>22%</td>
+                  <td>47%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>8%</td>
+                  <td>15%</td>
+                  <td>21%</td>
+                  <td>44%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>7%</td>
+                  <td>14%</td>
+                  <td>20%</td>
+                  <td>41%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>6%</td>
+                  <td>13%</td>
+                  <td>19%</td>
+                  <td>38%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="key-highlights">
+          <h3>Key Academic Highlights</h3>
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <i class="fas fa-chart-line"></i>
+              <h4>Consistent Growth</h4>
+              <p>27% increase in overall distinctions over the past decade</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-award"></i>
+              <h4>Top Performance</h4>
+              <p>Ranked among top 10 schools nationally in WASSCE results</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fas fa-user-graduate"></i>
+              <h4>University Placement</h4>
+              <p>85% of students gain admission to top universities</p>
             </div>
           </div>
         </div>
@@ -210,6 +475,407 @@
       </div>
     </section>
 
+    <section id="dining" class="dining-section">
+      <div class="container">
+        <h2 class="section-title">
+          Dining Services
+          <a href="#home" class="home-link"
+            ><i class="fas fa-home"></i> Back to Home</a
+          >
+        </h2>
+
+        <div class="dining-info">
+          <div class="dining-image">
+            <img
+              src="images/dining-hall.jpg"
+              alt="SEKESS Dining Hall"
+              class="hall-image"
+            />
+            <div class="dining-overlay">
+              <h3>Our Modern Dining Facility</h3>
+              <p>
+                Providing nutritious and balanced meals in a comfortable
+                environment
+              </p>
+            </div>
+          </div>
+
+          <div class="meal-times">
+            <h3><i class="fas fa-clock"></i> Meal Times</h3>
+            <div class="time-slot">
+              <span class="meal">Breakfast</span>
+              <span class="time">6:30 AM - 7:30 AM</span>
+            </div>
+            <div class="time-slot">
+              <span class="meal">Lunch</span>
+              <span class="time">12:00 PM - 1:30 PM</span>
+            </div>
+            <div class="time-slot">
+              <span class="meal">Supper</span>
+              <span class="time">5:30 PM - 7:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-board">
+          <h3 class="menu-title">
+            <i class="fas fa-clipboard-list"></i> Weekly Menu
+          </h3>
+
+          <div class="menu-tabs">
+            <button class="tab-btn active" data-day="monday">Monday</button>
+            <button class="tab-btn" data-day="tuesday">Tuesday</button>
+            <button class="tab-btn" data-day="wednesday">Wednesday</button>
+            <button class="tab-btn" data-day="thursday">Thursday</button>
+            <button class="tab-btn" data-day="friday">Friday</button>
+            <button class="tab-btn" data-day="saturday">Saturday</button>
+            <button class="tab-btn" data-day="sunday">Sunday</button>
+          </div>
+
+          <div class="menu-content">
+            <div class="menu-day active" id="monday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Tom Brown Porridge</li>
+                  <li>Bread and Butter</li>
+                  <li>Boiled Eggs</li>
+                  <li>Tea/Coffee</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Jollof Rice</li>
+                  <li>Grilled Chicken</li>
+                  <li>Mixed Vegetables</li>
+                  <li>Fresh Fruit</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Banku</li>
+                  <li>Okro Soup</li>
+                  <li>Fish/Meat</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="tuesday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Rice Porridge</li>
+                  <li>Bread and Eggs</li>
+                  <li>Fresh Fruits</li>
+                  <li>Tea/Milo</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Waakye</li>
+                  <li>Stew and Fish</li>
+                  <li>Gari and Beans</li>
+                  <li>Salad</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Fufu</li>
+                  <li>Light Soup</li>
+                  <li>Meat/Fish</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="wednesday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Hausa Koko</li>
+                  <li>Koose/Bread</li>
+                  <li>Peanuts</li>
+                  <li>Tea/Chocolate Drink</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Plain Rice</li>
+                  <li>Groundnut Soup</li>
+                  <li>Chicken/Fish</li>
+                  <li>Fresh Vegetables</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Yam/Plantain</li>
+                  <li>Kontomire Stew</li>
+                  <li>Boiled Eggs</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="thursday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Wheat Porridge</li>
+                  <li>Bread and Margarine</li>
+                  <li>Boiled Eggs</li>
+                  <li>Tea/Coffee</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Fried Rice</li>
+                  <li>Chicken Sauce</li>
+                  <li>Coleslaw</li>
+                  <li>Fresh Fruit</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Kenkey</li>
+                  <li>Fish Stew</li>
+                  <li>Shito</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="friday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Corn Porridge</li>
+                  <li>Bread and Egg Sauce</li>
+                  <li>Fresh Fruits</li>
+                  <li>Tea/Milo</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Banku</li>
+                  <li>Tilapia/Meat</li>
+                  <li>Pepper Sauce</li>
+                  <li>Fresh Vegetables</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Rice Balls</li>
+                  <li>Groundnut Soup</li>
+                  <li>Meat/Fish</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="saturday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Rice Porridge</li>
+                  <li>Bread and Sausage</li>
+                  <li>Boiled Eggs</li>
+                  <li>Tea/Coffee</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Yam/Plantain</li>
+                  <li>Garden Egg Stew</li>
+                  <li>Fish/Meat</li>
+                  <li>Fresh Vegetables</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Jollof Rice</li>
+                  <li>Grilled Chicken</li>
+                  <li>Coleslaw</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-day" id="sunday">
+              <div class="meal-card">
+                <h4>Breakfast</h4>
+                <ul>
+                  <li>Special Oats</li>
+                  <li>Pancakes</li>
+                  <li>Fresh Fruits</li>
+                  <li>Tea/Chocolate Drink</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Lunch</h4>
+                <ul>
+                  <li>Fufu</li>
+                  <li>Palm Nut Soup</li>
+                  <li>Assorted Meat/Fish</li>
+                  <li>Fresh Vegetables</li>
+                </ul>
+              </div>
+              <div class="meal-card">
+                <h4>Supper</h4>
+                <ul>
+                  <li>Fried Plantain</li>
+                  <li>Bean Stew</li>
+                  <li>Gari</li>
+                  <li>Water</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dining-notes">
+          <h3><i class="fas fa-info-circle"></i> Important Notes</h3>
+          <ul>
+            <li>All meals are prepared under strict hygiene conditions</li>
+            <li>Special dietary requirements are accommodated upon request</li>
+            <li>Menu may vary based on seasonal availability</li>
+            <li>Students must present their dining cards at meal times</li>
+          </ul>
+          <div class="back-home">
+            <a href="#home" class="home-link"
+              ><i class="fas fa-arrow-up"></i> Back to Top</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="staff" class="staff-section">
+      <div class="container">
+        <h2 class="section-title">Our Staff</h2>
+        <div class="staff-filters">
+          <button class="filter-btn active" data-filter="all">All Staff</button>
+          <button class="filter-btn" data-filter="science">Science</button>
+          <button class="filter-btn" data-filter="arts">Arts</button>
+          <button class="filter-btn" data-filter="business">Business</button>
+          <button class="filter-btn" data-filter="technical">Technical</button>
+        </div>
+
+        <div class="staff-grid">
+          <!-- Science Department -->
+          <div class="staff-card" data-department="science">
+            <div class="staff-image">
+              <img
+                src="images/staff/placeholder-female.jpg"
+                alt="Mrs. Sarah Addo"
+              />
+              <div class="staff-overlay">
+                <a href="tel:+233200000001" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Mrs. Sarah Addo</h3>
+              <p class="staff-subject">Biology</p>
+              <p class="staff-phone">+233 20 000 0001</p>
+            </div>
+          </div>
+
+          <div class="staff-card" data-department="science">
+            <div class="staff-image">
+              <img
+                src="images/staff/placeholder-male.jpg"
+                alt="Mr. Kwame Mensah"
+              />
+              <div class="staff-overlay">
+                <a href="tel:+233200000002" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Mr. Kwame Mensah</h3>
+              <p class="staff-subject">Physics</p>
+              <p class="staff-phone">+233 20 000 0002</p>
+            </div>
+          </div>
+
+          <!-- Arts Department -->
+          <div class="staff-card" data-department="arts">
+            <div class="staff-image">
+              <img
+                src="images/staff/placeholder-female.jpg"
+                alt="Ms. Abena Osei"
+              />
+              <div class="staff-overlay">
+                <a href="tel:+233200000003" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Ms. Abena Osei</h3>
+              <p class="staff-subject">Literature</p>
+              <p class="staff-phone">+233 20 000 0003</p>
+            </div>
+          </div>
+
+          <!-- Business Department -->
+          <div class="staff-card" data-department="business">
+            <div class="staff-image">
+              <img
+                src="images/staff/placeholder-male.jpg"
+                alt="Mr. Daniel Owusu"
+              />
+              <div class="staff-overlay">
+                <a href="tel:+233200000004" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Mr. Daniel Owusu</h3>
+              <p class="staff-subject">Economics</p>
+              <p class="staff-phone">+233 20 000 0004</p>
+            </div>
+          </div>
+
+          <!-- Technical Department -->
+          <div class="staff-card" data-department="technical">
+            <div class="staff-image">
+              <img
+                src="images/staff/placeholder-female.jpg"
+                alt="Mrs. Grace Asare"
+              />
+              <div class="staff-overlay">
+                <a href="tel:+233200000005" class="contact-btn">
+                  <i class="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+            <div class="staff-info">
+              <h3>Mrs. Grace Asare</h3>
+              <p class="staff-subject">ICT</p>
+              <p class="staff-phone">+233 20 000 0005</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
@@ -247,30 +913,31 @@
     </footer>
 
     <!-- Login Modal -->
-    <div id="login" class="modal">
+    <div class="modal" id="login">
       <div class="modal-content">
-        <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+        <h2><i class="fas fa-user"></i>Login</h2>
         <form class="login-form">
           <div class="form-group">
             <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email Address" required />
+            <input type="email" placeholder="Email" required />
           </div>
           <div class="form-group">
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" required />
           </div>
           <button type="submit" class="submit-btn">Login</button>
-          <p class="form-footer">
-            Don't have an account? <a href="#signup">Sign Up</a>
-          </p>
+          <div class="form-footer">
+            Don't have an account?
+            <a href="#" class="switch-to-signup">Sign up</a>
+          </div>
         </form>
       </div>
     </div>
 
     <!-- Signup Modal -->
-    <div id="signup" class="modal">
+    <div class="modal" id="signup">
       <div class="modal-content">
-        <h2><i class="fas fa-user-plus"></i> Sign Up</h2>
+        <h2><i class="fas fa-user-plus"></i>Sign Up</h2>
         <form class="signup-form">
           <div class="form-group">
             <i class="fas fa-user"></i>
@@ -278,7 +945,7 @@
           </div>
           <div class="form-group">
             <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email Address" required />
+            <input type="email" placeholder="Email" required />
           </div>
           <div class="form-group">
             <i class="fas fa-lock"></i>
@@ -289,9 +956,10 @@
             <input type="password" placeholder="Confirm Password" required />
           </div>
           <button type="submit" class="submit-btn">Sign Up</button>
-          <p class="form-footer">
-            Already have an account? <a href="#login">Login</a>
-          </p>
+          <div class="form-footer">
+            Already have an account?
+            <a href="#" class="switch-to-login">Login</a>
+          </div>
         </form>
       </div>
     </div>
